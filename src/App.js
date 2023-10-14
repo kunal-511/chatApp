@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+
 import {
   Box,
   Container,
@@ -35,6 +36,7 @@ import {
   orderBy,
 } from "firebase/firestore";
 import Header from "./Header";
+
 
 const auth = getAuth(app);
 const collectionName = "chatMessages";
@@ -200,6 +202,7 @@ function App() {
             </VStack>
           )}
         </Box>
+    >
       </BrowserRouter>
     </>
   );
